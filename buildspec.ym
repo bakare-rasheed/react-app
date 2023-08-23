@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - aws s3 sync build/ s3://your-s3-bucket
-      - aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E3JYLG9L0D0086 --paths "/*"
 
 artifacts:
   files: '**/*'
