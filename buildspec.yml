@@ -6,10 +6,10 @@ phases:
       nodejs: 12
   pre_build:
     commands:
-      - npm install
+      - yern install
   build:
     commands:
-      - npm run build
+      - yern run build
   post_build:
     commands:
       - aws s3 sync build/ s3://your-s3-bucket
