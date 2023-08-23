@@ -3,16 +3,16 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 12
+      nodejs: 18
   pre_build:
     commands:
-      - yern install
+      - yarn install
   build:
     commands:
-      - yern run build
+      - yarn run build
   post_build:
     commands:
-      - aws s3 sync build/ s3://your-s3-bucket
+      - aws s3 sync build/ s3://bakare-bucket
       - aws cloudfront create-invalidation --distribution-id E3JYLG9L0D0086 --paths "/*"
 
 artifacts:
