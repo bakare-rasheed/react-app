@@ -6,10 +6,10 @@ phases:
       nodejs: 14
   pre_build:
     commands:
-      - yarn install
+      - npm install
   build:
     commands:
-      - yarn run build
+      - npm run build
   post_build:
     commands:
       - aws s3 sync build/ s3://bakare-bucket
