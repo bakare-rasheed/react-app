@@ -6,9 +6,8 @@ phases:
       nodejs: 18
   pre_build:
     commands:
-      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-      - source ~/.nvm/nvm.sh
-      - nvm install 18
+      - sudo apt install npm -y
+      - npm install
   build:
     commands:
       - npm run build
