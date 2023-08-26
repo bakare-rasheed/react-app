@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "bakare",
   "version": "1.0.0",
   "description": "React example starter project",
   "keywords": [
@@ -23,11 +23,20 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakare-rasheed/react-app.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bakare-rasheed/react-app/issues"
+  },
+  "homepage": "https://github.com/bakare-rasheed/react-app#readme",
+  "author": ""
 }
