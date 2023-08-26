@@ -6,7 +6,6 @@ phases:
       nodejs: 18
   pre_build:
     commands:
-      - sudo apt install npm -y
       - npm install
   build:
     commands:
